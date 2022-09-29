@@ -5,6 +5,7 @@ public class Main {
         Scanner in = new Scanner(System.in);
 
         double C = 0;
+        String trash = "";
 
         System.out.print("Please enter C temperature: ");
         if(in.hasNextDouble())
@@ -18,7 +19,8 @@ public class Main {
         }
         else
         {
-            System.out.println("Please enter a correct input");
+            trash = in.nextLine();
+            System.out.println(trash + " is a invalid input");
         }
     }
 }
